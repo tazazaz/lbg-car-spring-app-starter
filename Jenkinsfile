@@ -1,9 +1,8 @@
 pipeline {
   environment {
     registry = "manasaid1994/lbg-car-spring-app-started"
-    registryCredential = "dockerhub_id"
+    registryCredential = "DOCKER_LOGIN"
     dockerImage = ""
-    RUNSERVER = credentials('DOCKER_LOGIN')
   }
   agent any
   stages {
